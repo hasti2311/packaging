@@ -1,0 +1,479 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background:#fff8e7;
+  color:#222;
+  line-height:1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background:#fff3e0;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:100;
+  transition: background 0.3s;
+}
+
+.logo{
+  font-size:1.6rem;
+  font-weight:bold;
+  color:#222;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#222;
+  font-weight:500;
+  transition:0.3s color;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+  color:#d99a66;
+}
+
+/* ================= HOME HEADER ================= */
+header{
+  background:#ffe4b3;
+  color:#222;
+  padding:100px 20px;
+  text-align:center;
+  transition: background 0.3s;
+}
+
+header h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+header p{
+  font-size:1.2rem;
+  margin-bottom:30px;
+}
+
+header a{
+  display:inline-block;
+  background:#ffcc80;
+  color:#222;
+  padding:12px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s background, 0.3s transform;
+}
+
+header a:hover{
+  background:#ffb74d;
+  transform:scale(1.05);
+}
+
+/* ================= HOME LINKS SECTION ================= */
+.card-link{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+}
+
+.card-link a{
+  background:#fff;
+  padding:20px 40px;
+  text-decoration:none;
+  color:#222;
+  border-radius:15px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  font-weight:500;
+  transition:0.3s transform, 0.3s box-shadow, 0.3s color;
+}
+
+.card-link a:hover{
+  transform:translateY(-5px) scale(1.02);
+  box-shadow:0 12px 25px rgba(0,0,0,0.1);
+  color:#d99a66;
+}
+
+/* ================= PAGE SECTION ================= */
+.page-section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+.page-section h2{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:50px;
+  color:#222;
+}
+
+/* ================= PRODUCTS GRID ================= */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.product-card{
+  background:#fff3e0;
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  transition:0.4s transform, 0.4s box-shadow, 0.4s background;
+  cursor:pointer;
+}
+
+.product-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 14px 30px rgba(0,0,0,0.15);
+  background:#ffe6c0;
+}
+
+.product-card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:15px;
+  transition:0.4s transform, 0.4s filter;
+}
+
+.product-card img:hover{
+  transform:scale(1.07);
+  filter: brightness(1.1);
+}
+
+.product-card h3{
+  color:#d99a66;
+  margin-bottom:10px;
+  font-size:1.2rem;
+  transition:0.3s color;
+}
+
+.product-card:hover h3{
+  color:#c17f4d;
+}
+
+.product-card p{
+  font-size:0.95rem;
+  color:#555;
+}
+
+/* ================= SERVICES GRID ================= */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.service-card{
+  background:#fff3e0;
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  transition:0.4s transform, 0.4s box-shadow, 0.4s background;
+  cursor:pointer;
+}
+
+.service-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 14px 30px rgba(0,0,0,0.15);
+  background:#ffe6c0;
+}
+
+.service-card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:15px;
+  transition:0.4s transform, 0.4s filter;
+}
+
+.service-card img:hover{
+  transform:scale(1.07);
+  filter: brightness(1.1);
+}
+
+.service-card h3{
+  color:#d99a66;
+  margin-bottom:10px;
+  font-size:1.2rem;
+  transition:0.3s color;
+}
+
+.service-card:hover h3{
+  color:#c17f4d;
+}
+
+.service-card p{
+  font-size:0.95rem;
+  color:#555;
+}
+
+/* ================= CONTACT FORM ================= */
+form{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+form input,
+form textarea{
+  padding:12px 15px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  font-size:1rem;
+  outline:none;
+  transition:0.3s border-color, 0.3s background;
+}
+
+form input:focus,
+form textarea:focus{
+  border-color:#d99a66;
+  background:#fff2e0;
+}
+
+form button{
+  padding:15px;
+  background:#d99a66;
+  color:#fff;
+  border:none;
+  border-radius:30px;
+  font-size:1rem;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s background, 0.3s transform;
+}
+
+form button:hover{
+  background:#c17f4d;
+  transform:scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#fff3e0;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+  font-size:0.9rem;
+  box-shadow:0 -2px 8px rgba(0,0,0,0.03);
+  transition: background 0.3s;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  header h1{
+    font-size:2.2rem;
+  }
+
+  .card-link{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .page-section{
+    padding:50px 15px;
+  }
+}
+/* ========== NEW EXTRA EFFECTS (ADD AT END) ========== */
+
+body{
+  animation: bodyFade 0.8s ease;
+}
+
+@keyframes bodyFade{
+  from{ opacity:0; }
+  to{ opacity:1; }
+}
+
+.nav-links a{
+  position:relative;
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:2px;
+  background:#d99a66;
+  left:0;
+  bottom:-6px;
+  transition:0.3s ease;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+.product-card:hover,
+.service-card:hover{
+  box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+
+.product-card img,
+.service-card img{
+  transition:0.5s ease;
+}
+
+.product-card img:hover,
+.service-card img:hover{
+  transform:scale(1.1);
+}
+
+header a,
+form button{
+  box-shadow:0 10px 30px rgba(217,154,102,0.4);
+}
+
+header a:hover,
+form button:hover{
+  box-shadow:0 18px 40px rgba(217,154,102,0.6);
+}
+
+.page-section{
+  animation: sectionMove 0.9s ease both;
+}
+
+@keyframes sectionMove{
+  from{
+    opacity:0;
+    transform:translateY(25px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+/* ===== MOBILE IMPROVEMENT ===== */
+@media(max-width:480px){
+
+  nav{
+    padding:15px 20px;
+  }
+
+  .nav-links{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  header h1{
+    font-size:1.8rem;
+  }
+
+  header p{
+    font-size:1rem;
+  }
+
+  .card-link{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .product-card img,
+  .service-card img{
+    height:150px;
+  }
+}
+/* ===== DARK MODE TOGGLE ===== */
+body.dark-mode{
+  background:#222;
+  color:#fff;
+}
+
+body.dark-mode nav{
+  background:#333;
+}
+
+body.dark-mode header{
+  background:#444 url("images/printing-bg.jpg") center/cover no-repeat;
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode header a,
+body.dark-mode .card-link a{
+  color:#fff;
+}
+
+body.dark-mode .product-card,
+body.dark-mode .service-card,
+body.dark-mode footer{
+  background:#333;
+  color:#fff;
+}
+
+body.dark-mode footer{
+  box-shadow:none;
+}
+/* ===== Social Floating Buttons ===== */
+
+.whatsapp-float,
+.instagram-float,
+.facebook-float{
+  position:fixed;
+  bottom:25px;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  color:#fff;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  z-index:999;
+  transition:0.3s;
+}
+
+/* Individual button positions */
+.whatsapp-float{ right:25px; background:#25D366; }
+.instagram-float{ right:90px; background:#E1306C; }
+.facebook-float{ right:155px; background:#1877F2; }
+
+.whatsapp-float:hover,
+.instagram-float:hover,
+.facebook-float:hover{
+  transform:scale(1.15);
+  box-shadow:0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* Optional: tiny pulse animation */
+@keyframes pulse {
+  0%{ transform:scale(1); }
+  50%{ transform:scale(1.1); }
+  100%{ transform:scale(1); }
+}
+
+.whatsapp-float:hover,
+.instagram-float:hover,
+.facebook-float:hover{
+  animation:pulse 0.6s infinite;
+}
